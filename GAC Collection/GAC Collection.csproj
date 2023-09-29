@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2876D1C2-E19E-4C75-84DD-CE96804F2DCF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GAC_Collection</RootNamespace>
+    <AssemblyName>GAC Collection</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging">
+      <HintPath>bin\Debug\System\Lib\Common.Logging.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DownLoadFile">
+      <HintPath>bin\Debug\System\DownLoadFile.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ExpandableGridView">
+      <HintPath>bin\Debug\System\Lib\ExpandableGridView.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FilterCommon">
+      <HintPath>bin\Debug\System\FilterCommon.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GacBrowser, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\GacBrowser.exe</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GacDB">
+      <HintPath>bin\Debug\System\GacDB.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GacHelper">
+      <HintPath>bin\Debug\System\GacHelper.exe</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GacUserContorl">
+      <HintPath>bin\Debug\System\GacUserContorl.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>bin\Debug\System\Lib\HtmlAgilityPack.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="HttpCommon">
+      <HintPath>bin\Debug\System\HttpCommon.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Hweny.TabSlider">
+      <HintPath>bin\Debug\System\Lib\Hweny.TabSlider.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.SHDocVw, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>bin\Debug\System\Lib\Interop.SHDocVw.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="LableCommon">
+      <HintPath>bin\Debug\System\LableCommon.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Windows\assembly\GAC\Microsoft.mshtml\7.0.3300.0__b03f5f7f11d50a3a\Microsoft.mshtml.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuleCommon">
+      <HintPath>bin\Debug\System\ModuleCommon.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OutData">
+      <HintPath>bin\Debug\System\OutData.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Quartz">
+      <HintPath>bin\Debug\System\Lib\Quartz.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RuleCommon">
+      <HintPath>bin\Debug\System\RuleCommon.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>bin\Debug\System\Lib\System.Data.SQLite.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="SystemCommon">
+      <HintPath>bin\Debug\System\SystemCommon.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TaskCommon">
+      <HintPath>bin\Debug\System\TaskCommon.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UrlCommon">
+      <HintPath>bin\Debug\System\UrlCommon.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VariableCommon">
+      <HintPath>bin\Debug\System\VariableCommon.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>bin\Debug\System\Lib\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XmlSerializer">
+      <HintPath>bin\Debug\System\XmlSerializer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\CmbItem.cs" />
+    <Compile Include="Common\CronManager.cs" />
+    <Compile Include="Common\Common.cs" />
+    <Compile Include="Common\GacInfo.cs" />
+    <Compile Include="Ex\BaseTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ex\BaseTreeView.Designer.cs">
+      <DependentUpon>BaseTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ex\DockContentEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helper\CodeHighlighting.cs" />
+    <Compile Include="MainUi\FrmDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainUi\FrmDatabase.Designer.cs">
+      <DependentUpon>FrmDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUi\FrmInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainUi\FrmInput.Designer.cs">
+      <DependentUpon>FrmInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUi\FrmPostResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainUi\FrmPostResult.Designer.cs">
+      <DependentUpon>FrmPostResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUi\Task\FrmWebCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainUi\Task\FrmWebCategory.Designer.cs">
+      <DependentUpon>FrmWebCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUi\Task\FrmLable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainUi\Task\FrmLable.Designer.cs">
+      <DependentUpon>FrmLable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUi\Task\FrmMultiPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainUi\Task\FrmMultiPage.Designer.cs">
+      <DependentUpon>FrmMultiPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUi\Task\FrmRun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainUi\Task\FrmRun.Designer.cs">
+      <DependentUpon>FrmRun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUi\Task\FrmWebModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainUi\Task\FrmWebModule.Designer.cs">
+      <DependentUpon>FrmWebModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserContorl\MultiPagePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserContorl\MultiPagePanel.Designer.cs">
+      <DependentUpon>MultiPagePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ex\ToolStripSpringCombox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ex\ToolStripSpringCombox.Designer.cs">
+      <DependentUpon>ToolStripSpringCombox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMessage.Designer.cs">
+      <DependentUpon>FormMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\ControlResize.cs" />
+    <Compile Include="Helper\XmlHelper.cs" />
+    <Compile Include="MainUi\FrmRunTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainUi\FrmRunTask.Designer.cs">
+      <DependentUpon>FrmRunTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUi\FrmTaskList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainUi\FrmTaskList.Designer.cs">
+      <DependentUpon>FrmTaskList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUi\FrmWelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainUi\FrmWelcome.Designer.cs">
+      <DependentUpon>FrmWelcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUi\Help\FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainUi\Help\FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUi\Task\FrmCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainUi\Task\FrmCategory.Designer.cs">
+      <DependentUpon>FrmCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUi\Task\FrmJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainUi\Task\FrmJob.Designer.cs">
+      <DependentUpon>FrmJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUi\Task\FrmUrlAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainUi\Task\FrmUrlAdd.Designer.cs">
+      <DependentUpon>FrmUrlAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Ex\BaseTreeView.resx">
+      <DependentUpon>BaseTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ex\DockContentEx.resx">
+      <DependentUpon>DockContentEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUi\FrmDatabase.resx">
+      <DependentUpon>FrmDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUi\FrmInput.resx">
+      <DependentUpon>FrmInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUi\FrmPostResult.resx">
+      <DependentUpon>FrmPostResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUi\Task\FrmWebCategory.resx">
+      <DependentUpon>FrmWebCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUi\Task\FrmLable.resx">
+      <DependentUpon>FrmLable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUi\Task\FrmMultiPage.resx">
+      <DependentUpon>FrmMultiPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUi\Task\FrmRun.resx">
+      <DependentUpon>FrmRun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUi\Task\FrmWebModule.resx">
+      <DependentUpon>FrmWebModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserContorl\MultiPagePanel.resx">
+      <DependentUpon>MultiPagePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ex\ToolStripSpringCombox.resx">
+      <DependentUpon>ToolStripSpringCombox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMessage.resx">
+      <DependentUpon>FormMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUi\FrmRunTask.resx">
+      <DependentUpon>FrmRunTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUi\FrmTaskList.resx">
+      <DependentUpon>FrmTaskList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUi\FrmWelcome.resx">
+      <DependentUpon>FrmWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUi\Help\FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUi\Task\FrmCategory.resx">
+      <DependentUpon>FrmCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUi\Task\FrmJob.resx">
+      <DependentUpon>FrmJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUi\Task\FrmUrlAdd.resx">
+      <DependentUpon>FrmUrlAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_128px_508421_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关闭点击.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关闭滑过.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关闭默认.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Helper\CsharpHttpHelper\CsharpHttpHelper.csproj">
+      <Project>{966C2F8B-47E5-4E6D-ABFC-13501E739D25}</Project>
+      <Name>CsharpHttpHelper</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
